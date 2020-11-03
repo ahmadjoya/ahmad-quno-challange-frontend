@@ -1,0 +1,24 @@
+{
+  "name": "quno-challenge-backend",
+  "version": "1.0.0",
+  "description": "Backend to support the quno challenge",
+  "main": "index.js",
+  "author": "Qunomedical",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint 'src/**/*.ts'",
+    "build": "tsc --build --verbose",
+    "clean": "rm -rf ./dist",
+    "dev": "yarn build && serverless offline start --httpPort 4000 --noPrependStageInUrl --noAuth",
+    "start": "yarn dev"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.64",
+    "@typescript-eslint/eslint-plugin": "^4.6.1",
+    "@typescript-eslint/parser": "^4.6.1",
+    "eslint": "^7.12.1",
+    "serverless": "^2.9.0",
+    "serverless-offline": "^6.8.0",
+    "typescript": "^4.0.5"
+  }
+}

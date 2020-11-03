@@ -1,0 +1,25 @@
+{
+  "name": "quno-challenge-frontend",
+  "version": "1.0.0",
+  "description": "Base template for Quno's frontend challenge",
+  "author": "Qunomedical",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.6",
+    "@types/react": "^16.9.55",
+    "postcss-flexbugs-fixes": "4.2.1",
+    "postcss-preset-env": "^6.7.0",
+    "tailwindcss": "^1.7.4",
+    "typescript": "^4.0.5"
+  }
+}
