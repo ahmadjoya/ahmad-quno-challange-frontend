@@ -15,11 +15,11 @@ Feel free to give your opinion and suggestions about it.
 
 You have a week to return this challenge to our HR department, however this challenge was designed not to take much more than a few hours (hopefully). We are mindful of your time.
 
-In order to deliver the challenge, simply send it zipped via Google to our HR representative or push it to a private git repository with access to https://github.com/araujoigor
+In order to deliver the challenge, simply send it zipped to our HR representative.
 
 ## Objectives
 
-As mentioned, we want to assess your expertise as a Frontend developer and give you a small taste of what we do here at Quno.
+As mentioned, we want to assess your expertise as a Javascript developer and give you a small taste of what we do here at Quno.
 
 Here is what you need to deliver:
 
