@@ -91,9 +91,9 @@ Also, in the `frontend` folder you find all the assets you need for the frontend
 
 ## Suggestions
 
-Here at Quno we work with [NextJS](https://nextjs.org) and [TailwindCSS](https://tailwindcss.com/) and we love it. We believe these tools are very good for the problems we are trying to solve.
+Here at Quno we work with [NextJS](https://nextjs.org) and we love it. We believe it is very good for the problems we are trying to solve.
 
-Given that this challenge tries to touch upon a few of these problems, we would suggest you use these tools. **However, it is not mandatory. Please feel free to use whatever tools you feel like are the best ones for the job and the ones you are most comfortable with.**
+Given that this challenge tries to touch upon a few of these problems, we would suggest you use it. **However, it is not mandatory. Please feel free to use whatever tools/frameworks you feel like are the best ones for the job and the ones you are most comfortable with.**
 
 ## Contact us
 
