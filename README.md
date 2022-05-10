@@ -47,7 +47,7 @@ The URL is expected to be the following:
 1. `/doctors`, which is the list of all doctors
 2. `/{slug}`, which is the details page for a given doctor, where `slug` is the slug of the doctor
 
-The design specs can be found at `doctor-details.pdf` and `doctor-list.pdf`. These mockups are not complete **on purpose**. You are expected to fill the gaps as you seem fit. The only thing we ask is that you write a small text explaining the decisions you made (either to fill in design gaps or to replace design decisions). Also, you are not obliged to implement any breakpoint other than mobile. So for tablet and desktop, just expand the viewport. Honestly, we won't even check how the page looks on any other viewport.
+The design specs can be found at https://www.figma.com/file/awCjCcbhHYB5V1h9gevs5H/Design-Challenge---Senior-Javascript-Developer-(Bjorn). These mockups are not complete **on purpose**. You are expected to fill the gaps as you seem fit. The only thing we ask is that you write a small text explaining the decisions you made (either to fill in design gaps or to replace design decisions). Also, you are not obliged to implement any breakpoint other than mobile. So for tablet and desktop, just expand the viewport. Honestly, we won't even check how the page looks on any other viewport.
 
 In terms of functionality, we expect the user to be able to order the results of the list of doctors by:
 
