@@ -15,7 +15,7 @@ Feel free to give your opinion and suggestions about it.
 
 You have a week to return this challenge to our HR department, however this challenge was designed not to take much more than a few hours (hopefully). We are mindful of your time.
 
-In order to deliver the challenge, simply send it zipped to our HR representative.
+In order to deliver the challenge, simply send the link to public repository back to us.
 
 ## Objectives
 
