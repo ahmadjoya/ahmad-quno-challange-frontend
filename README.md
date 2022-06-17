@@ -5,13 +5,7 @@ This is the code challenge. The goal is to create a Next.js project with React, 
 
 ## Introduction
 
-Hey there! Welcome to Qunomedical's Frontend code challenge. We are happy you are interested in our company and are taking your time to solve this challenge.
-
-The primary goal of this challenge is to assess, without using too much of your time, how comfortable you are with base aspects of Frontend Software development and Software development in general, especially within the context of Qunomedical's tech stack.
-
-We also want to use this challenge as an opportunity to get you in touch with a little bit of our tech stack and the problems we try to solve here.
-
-Feel free to give your opinion and suggestions about it.
+Welcome to Qunomedical's Frontend code challenge! The goal of this challenge is to assess your comfort level with base aspects of Frontend Software development and Software development in general, within the context of Qunomedical's tech stack. This is also an opportunity to get you in touch with a little bit of our tech stack and the problems we try to solve here. We're open to your opinion and suggestions about it.
 
 ## Deadline
 
