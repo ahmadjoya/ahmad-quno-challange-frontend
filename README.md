@@ -15,12 +15,10 @@ In order to deliver the challenge, simply send the link to public repository bac
 
 ## Objectives
 
-As mentioned, we want to assess your expertise as a Javascript developer and give you a small taste of what we do here at Quno.
+1. Create a Frontend application that follows both product, design and technical requirements.
+2. Create a document briefly explaining your decisions, especially if you deviated from any specific point on the specs.
 
-Here is what you need to deliver:
-
-1. A Frontend application that follows both product, design and technical requirements.
-2. A document briefly explaining your decisions, especially if you deviated from any specific point on the specs.
+## Grading
 
 This is how we will be grading your challenge:
 
