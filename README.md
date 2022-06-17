@@ -1,5 +1,7 @@
-# Quno Frontend Code Challenge
+# TL;DR
+This is the code challenge. The goal is to create a Next.js project with React, showing list of doctors and filters for the list, and a page with selected doctor. Figma design is attached to this challenge. Only mobile layout is required.
 
+# Quno Frontend Code Challenge
 
 ## Introduction
 
@@ -13,7 +15,7 @@ Feel free to give your opinion and suggestions about it.
 
 ## Deadline
 
-You have a week to return this challenge to our HR department, however this challenge was designed not to take much more than a few hours (hopefully). We are mindful of your time.
+You have a week to return this challenge to our HR department, however this challenge was designed not to take much more than a 3-4 hours (hopefully). We are mindful of your time.
 
 In order to deliver the challenge, simply send the link to public repository back to us.
 
