@@ -9,7 +9,7 @@ Welcome to Qunomedical's Frontend code challenge! The goal of this challenge is 
 
 ## Deadline
 
-You have a week to return this challenge to our HR department, however this challenge was designed not to take much more than a 3-4 hours (hopefully). We are mindful of your time.
+You have a week to return this challenge to our HR department, however this challenge was designed not to take much more than a 4-6 hours (hopefully). We are mindful of your time.
 
 In order to deliver the challenge, simply send the link to public repository back to us.
 
@@ -51,11 +51,10 @@ In terms of functionality, we expect the user to be able to order the results of
 
 ### Technical requirements
 
-1. You are expected to use React.
-2. You are free to use any styling frameworks you prefer (please refer to the [suggestions](#suggestions) we have below)
+1. You are expected to use React and Typescript.
+2. You are expected to use CSS modules
 3. You are free to use any testing framework you want. You don't need to test everything in your code. **The minimum we expect is a complete unit test of at least one component.**
 4. Since one of the main pillars of our website is to be SEO strong, you are required to use **server-side rendering** for this website. This means we expect the page to fully render without Javascript enabled (we don't expect the filtering capabilities to work without Javascript enabled though). It is up to you to decide how to achieve this (please refer to the [suggestions](#suggestions) we have below).
-5. **(Optional) BONUS: Implement things in Typescript**
 
 The data for the pages are retrieved from the backend that is shipped within this challenge. You have two endpoints:
 
@@ -72,7 +71,7 @@ This challenge is divided into `backend` and `frontend`. You are not expected to
 2. `yarn install`
 3. `yarn dev`
 
-The `frontend` folder has been initialized with the default NextJS template for Typescript and with TailwindCSS. Feel free to completely change this folder to what you prefer.
+The `frontend` folder has been initialized with the default NextJS template for Typescript. Feel free to completely change this folder to what you prefer.
 
 If you want to use this setup, all you have to do is:
 
