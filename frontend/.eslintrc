@@ -11,7 +11,6 @@
       "es6": true,
       "browser": true,
       "jest": true,
-      "cypress/globals": true
     },
     "parserOptions": {
       "parser": "@babel/eslint-parser",
@@ -23,33 +22,11 @@
         "objectLiteralDuplicateProperties": false
       }
     },
-    "plugins": ["import", "cypress"],
+    "plugins": ["import"],
     "rules": {
       "no-console": 0,
       "react/react-in-jsx-scope": "off",
       "react/display-name": "off",
-      "no-restricted-imports": [
-        "error",
-        {
-          "paths": [
-            {
-              "name": "next/link",
-              "message": "Please use ~/components/ui/Link instead"
-            }
-          ]
-        }
-      ],
-      "react/forbid-dom-props": [
-        "error",
-        {
-          "forbid": [
-            {
-              "propName": "href",
-              "message": "You should wrap anchors with ~/components/ui/Link, thus not needing to set href on them"
-            }
-          ]
-        }
-      ],
       "import/order": [
         "error",
         {
