@@ -1,5 +1,5 @@
 {
-    "root": true,
+    "root": false,
     "parser": "@babel/eslint-parser",
     "extends": [
       "eslint:recommended",
@@ -63,7 +63,7 @@
           "ecmaFeatures": { "jsx": true },
           "ecmaVersion": 2020,
           "sourceType": "module",
-          "project": "**/tsconfig.json"
+          "project": "./tsconfig.json"
         },
         "plugins": ["@typescript-eslint"],
         "rules": {

@@ -25,13 +25,13 @@
     "paths": {
       "react": ["./node_modules/@types/react"]
     },
-    "incremental": true,
+    "incremental": true
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "**/*.js",
+    "**/*.js"
   ],
   "exclude": [
     "node_modules"
