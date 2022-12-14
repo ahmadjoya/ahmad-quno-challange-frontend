@@ -1,14 +1,14 @@
-import Nav from "../components/nav";
+import Nav from 'components/Nav';
 
-export default function IndexPage() {
+const IndexPage = (): JSX.Element => {
   return (
     <div>
       <Nav />
-      <div className="py-20">
-        <h1 className="text-5xl text-center text-accent-1">
-          Next.js + Tailwind CSS
-        </h1>
+      <div>
+        <h1>Next.js</h1>
       </div>
     </div>
   );
-}
+};
+
+export default IndexPage;

@@ -1,0 +1,28 @@
+.image {
+  display: inline;
+  margin-inline: 0.5rem;
+}
+
+.item {
+  color: #3b82f6;
+  margin-inline: 0.5rem;
+  text-decoration: none;
+}
+
+.itemButton {
+  background: #3b82f6;
+  border-radius: 0.25rem;
+  color: #fff;
+  font-weight: 700;
+  margin-inline: 0.5rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 1rem;
+}

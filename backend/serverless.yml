@@ -2,26 +2,26 @@ service: backend
 
 provider:
   name: aws
-  runtime: nodejs12.x
+  runtime: nodejs14.x
   region: eu-central-1
 
 custom:
-    resourceRoutes: true
+  resourceRoutes: true
 
 plugins:
   - serverless-offline
 
 functions:
-    doctors:
-        name: doctors
-        handler: dist/handlers.entrypoint
-        memorySize: 128
-        timeout: 10
-        environment:
-        events:
-        - http:
-            path: /
-            method: GET
-        - http:
-            path: /{slug}
-            method: GET
+  doctors:
+    name: doctors
+    handler: dist/handlers.entrypoint
+    memorySize: 128
+    timeout: 10
+    environment:
+    events:
+      - http:
+          path: /
+          method: GET
+      - http:
+          path: /{slug}
+          method: GET

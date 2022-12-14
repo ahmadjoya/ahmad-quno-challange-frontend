@@ -1,8 +1,8 @@
-import { AppProps } from "next/app";
-import "../styles/index.css";
+import { AppProps } from 'next/app';
+import 'styles/index.css';
 
-function MyApp({ Component, pageProps }: AppProps) {
+const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
   return <Component {...pageProps} />;
-}
+};
 
 export default MyApp;

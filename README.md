@@ -1,4 +1,5 @@
 # TL;DR
+
 This is the code challenge. The goal is to create a Next.js project with React, showing list of doctors and filters for the list, and a page with selected doctor. Figma design is attached to this challenge. Only mobile layout is required.
 
 # Quno Frontend Code Challenge
@@ -68,19 +69,18 @@ The data for the pages are retrieved from the backend that is shipped within thi
 This challenge is divided into `backend` and `frontend`. You are not expected to do anything on the `backend` folder. To run the backend code, you just need to:
 
 1. `cd backend/`
-2. `yarn install`
-3. `yarn dev`
+2. `npm install`
+3. `npm run dev`
 
 The `frontend` folder has been initialized with the default NextJS template for Typescript. Feel free to completely change this folder to what you prefer.
 
 If you want to use this setup, all you have to do is:
 
 1. `cd frontend/`
-2. `yarn install`
-3. `yarn dev`
+2. `npm install`
+3. `npm run dev`
 
 Also, in the `frontend` folder you find all the assets you need for the frontend (icons and images) on the `public` folder.
-
 
 ## Suggestions
 
