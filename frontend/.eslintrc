@@ -1,0 +1,125 @@
+{
+    "root": true,
+    "parser": "@babel/eslint-parser",
+    "extends": [
+      "eslint:recommended",
+      "plugin:prettier/recommended",
+      "plugin:react/recommended"
+    ],
+    "env": {
+      "node": true,
+      "es6": true,
+      "browser": true,
+      "jest": true
+    },
+    "parserOptions": {
+      "parser": "@babel/eslint-parser",
+      "ecmaVersion": 2020,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "globalReturn": true,
+        "generators": false,
+        "objectLiteralDuplicateProperties": false
+      }
+    },
+    "plugins": ["import"],
+    "rules": {
+      "no-console": 0,
+      "react/react-in-jsx-scope": "off",
+      "react/display-name": "off",
+      "import/order": [
+        "error",
+        {
+          "groups": [
+            "builtin",
+            "external",
+            "internal",
+            "parent",
+            "sibling",
+            "index",
+            "object",
+            "type"
+          ]
+        }
+      ]
+    },
+    "ignorePatterns": ["node_modules/"],
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    },
+    "overrides": [
+      {
+        "files": ["**/*.ts", "**/*.tsx"],
+        "extends": [
+          "eslint:recommended",
+          "plugin:react/recommended",
+          "plugin:@typescript-eslint/eslint-recommended",
+          "plugin:@typescript-eslint/recommended"
+        ],
+        "parser": "@typescript-eslint/parser",
+        "parserOptions": {
+          "ecmaFeatures": { "jsx": true },
+          "ecmaVersion": 2020,
+          "sourceType": "module",
+          "project": "./tsconfig.json"
+        },
+        "plugins": ["@typescript-eslint"],
+        "rules": {
+          "react/react-in-jsx-scope": "off",
+          "@typescript-eslint/no-var-requires": "off",
+          "@typescript-eslint/no-explicit-any": "error",
+          "@typescript-eslint/explicit-function-return-type": [
+            "error",
+            { "allowExpressions": true }
+          ],
+          "padding-line-between-statements": [
+            "warn",
+            {
+              "blankLine": "always",
+              "prev": "block-like",
+              "next": "*"
+            },
+            {
+              "blankLine": "always",
+              "prev": "multiline-expression",
+              "next": "*"
+            }
+          ],
+          "prefer-destructuring": [
+            "warn",
+            {
+              "object": true,
+              "array": false
+            },
+            {
+              "enforceForRenamedProperties": false
+            }
+          ],
+          "prefer-template": "error",
+          "no-else-return": "error",
+          "spaced-comment": ["error", "always", { "markers": ["/"] }],
+          "no-param-reassign": "error",
+          "object-shorthand": [
+            "error",
+            "always",
+            { "avoidExplicitReturnArrows": true }
+          ],
+          "no-nested-ternary": "error",
+          "no-return-assign": ["error", "always"],
+          "@typescript-eslint/array-type": [
+            "error",
+            {
+              "default": "array"
+            }
+          ],
+          "@typescript-eslint/no-unused-vars": [
+            "warn",
+            { "ignoreRestSiblings": true }
+          ],
+          "@typescript-eslint/consistent-type-imports": "warn"
+        }
+      }
+    ]
+  }
