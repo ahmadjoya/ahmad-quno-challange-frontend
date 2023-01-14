@@ -1,4 +1,4 @@
-import Nav from 'components/Nav';
+import Nav from '../components/Nav';
 
 const IndexPage = (): JSX.Element => {
   return (
