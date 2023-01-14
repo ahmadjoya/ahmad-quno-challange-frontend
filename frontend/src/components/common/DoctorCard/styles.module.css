@@ -1,0 +1,13 @@
+.topOfCard {
+  display: flex;
+  justify-content: space-around;
+}
+.category {
+  text-transform: uppercase;
+  margin: 0;
+}
+.doctorTitle {
+  font-size: 1.375;
+  font-family: 'NettoOT' !important;
+  color: #155263;
+}
