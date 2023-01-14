@@ -1,9 +1,13 @@
+@font-face {
+  font-family: 'NettoOT';
+  src: local('NettoOT'), url(/fonts/NettoOT/NettoOT.woff) format('woff');
+}
+
 html {
   font-family: sans-serif;
   line-height: 1.5;
 }
-
-h1 {
+h1.mainpageTitle {
   font-size: 3rem;
   text-align: center;
 }

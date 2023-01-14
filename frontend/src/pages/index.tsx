@@ -5,7 +5,7 @@ const IndexPage = (): JSX.Element => {
     <div>
       <Nav />
       <div>
-        <h1>Next.js</h1>
+        <h1 className="mainpageTitle">Next.js</h1>
       </div>
     </div>
   );
