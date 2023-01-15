@@ -1,8 +1,8 @@
 import Header from 'src/components/header';
-import Filter from 'src/components/filter';
+import Sort from 'src/components/sortOptions';
 import TopBanner from 'src/components/TopBanner';
 import DoctorList from 'src/components/doctors';
-import { DOCTORS } from 'src/constants/doctors';
+import { useState } from 'react';
 import axios from 'axios';
 import type { GetServerSideProps } from 'next';
 import styles from '../styles/doctors.module.css';
@@ -13,13 +13,43 @@ const Doctors: NextPage<{ data: Doctor[] }> = ({
 }: {
   data: Doctor[];
 }) => {
+  const [doctors, setDoctors] = useState<Doctor[]>([...data]);
+  const [selectedTab, setSelectedTab] = useState<string>('');
   console.log('data', data);
+
+  const sortBy = (field: string): Doctor[] => {
+    if (field === 'Best reviews') {
+      const sorted = doctors.sort(
+        (a, b) => b.ratingsAverage - a.ratingsAverage,
+      );
+      setSelectedTab(field);
+      setDoctors([...sorted]);
+      return sorted;
+    } else if (field === 'Lowest price') {
+      const sorted = doctors.sort((a, b) => a.basePrice - b.basePrice);
+      setSelectedTab(field);
+      setDoctors([...sorted]);
+      return sorted;
+    } else if (field === 'Best Qunoscore') {
+      const sorted = doctors.sort(
+        (a, b) => b.qunoScoreNumber - a.qunoScoreNumber,
+      );
+      setSelectedTab(field);
+      setDoctors([...sorted]);
+      return sorted;
+    }
+
+    setSelectedTab(field);
+    setDoctors([...data]);
+    return data;
+  };
+
   return (
     <>
       <Header />
       <TopBanner />
-      <Filter />
-      <DoctorList doctors={data} />
+      <Sort sortBy={sortBy} selectedTab={selectedTab} />
+      <DoctorList doctors={doctors} />
     </>
   );
 };

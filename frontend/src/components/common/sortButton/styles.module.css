@@ -1,9 +1,9 @@
-.filterButton {
-  background: #ffca58;
+.sortButton {
   border-radius: 1.5rem;
   padding: 0.8rem;
   border: none;
   color: #101010;
   font-size: 0.875rem;
   white-space: nowrap;
+  margin-left: 0.8rem;
 }
