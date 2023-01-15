@@ -1,0 +1,93 @@
+.textBanner {
+  background-color: #155263;
+  color: #fff;
+  /* display: flex;
+  flex-direction: column; */
+  padding: 16px 21px 32px;
+}
+.overView {
+  margin-bottom: 1.5rem;
+}
+.overView p,
+.overView h1 {
+  margin: 0;
+}
+.textBannerTitle {
+  font-size: 2.25rem;
+  font-family: 'NettoOT' !important;
+  font-style: normal;
+}
+.descItems {
+  /* margin-top: 1rem; */
+  font-size: 1.125rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-family: 'Aria';
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
+  margin-bottom: 4px;
+}
+.icon {
+  display: flex;
+  /* padding-left: 0.8rem; */
+  padding-right: 0.8rem;
+}
+.categoryText {
+  text-transform: uppercase;
+  color: #ffca58;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+}
+.qunoScore {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.qunoScoreNumber {
+  padding: 0.8rem;
+  border-radius: 50%;
+  border: 1px solid #ffca58;
+  box-shadow: 1px 1px 3px 1px #ffca58;
+}
+.qunoScoreDesc {
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+}
+.qunoScoreStatus {
+  color: #ffca58;
+  font-family: 'Arial';
+  font-weight: 700;
+  font-size: 1rem;
+}
+.qunoScoreDescTitle {
+  text-transform: uppercase;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.625rem;
+}
+.desc {
+  margin-top: 1rem;
+}
+.actions {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.actions button {
+  margin-top: 0.4rem;
+  border: none;
+  font-family: 'NettoOT';
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  padding: 0.7rem;
+}
+.actions button:last-of-type {
+  background-color: #ffca58;
+}

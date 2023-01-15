@@ -16,3 +16,6 @@ h1.mainpageTitle {
   font-size: 3rem;
   text-align: center;
 }
+.m-0 {
+  margin: 0;
+}

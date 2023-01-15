@@ -24,7 +24,7 @@ const TopBanner: FC = () => {
           {DESC_ITEMS.map((item) => (
             <div className={styles.descItems} key={item.id}>
               <div className={styles.icon}>
-                <Icon />
+                <Icon link="/images/check.svg" />
               </div>
               <p>Only professionally-vetted doctors</p>
             </div>

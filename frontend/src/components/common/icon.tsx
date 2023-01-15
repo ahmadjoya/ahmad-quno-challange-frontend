@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import type { FC } from 'react';
 
-const Icon: FC = () => {
+const Icon: FC<{ link: string }> = ({ link }) => {
   return (
     <>
-      <Image src="/images/check.svg" width={30} height={30} alt="Check Icon" />
+      <Image src={link} width={30} height={30} alt="Check Icon" />
     </>
   );
 };
