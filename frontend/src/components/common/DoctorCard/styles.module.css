@@ -1,13 +1,77 @@
-.topOfCard {
+.doctorCard {
+  padding-top: 0.9rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #cacaca99;
+}
+.topOfCard,
+.middleOfCard,
+.bottomOfCard {
   display: flex;
-  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+.desc {
+  padding-left: 0.9rem;
 }
 .category {
   text-transform: uppercase;
   margin: 0;
 }
 .doctorTitle {
-  font-size: 1.375;
+  font-size: 1.375rem;
   font-family: 'NettoOT' !important;
   color: #155263;
+  margin: 0;
+  margin-top: 0.2rem;
+}
+.location,
+.ratingItem {
+  display: flex;
+  align-items: center;
+}
+.qunoScorePlace {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.qunoScoreContainer {
+  border-radius: 50%;
+  border: 2px solid #ffca58;
+  padding: 0.6rem;
+  font-size: 1rem;
+}
+.qunoScoreNumber {
+  line-height: 1.218;
+  font-weight: 400;
+}
+.qunoScoreStatus {
+  font-weight: bold;
+}
+.ratingItemDesc {
+  display: flex;
+  flex-direction: column;
+}
+.bottomOfCard {
+  margin-top: 3rem;
+}
+.pricing {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
+.pricing p {
+  margin: 0;
+}
+.seeProfile {
+  flex: 2;
+}
+.seeProfileButton {
+  border: 1px solid #155263;
+  border-radius: 2px;
+  padding: 0.6rem;
+  width: 100%;
+}
+.seeProfileButton a {
+  color: #155263;
+  text-decoration: none;
 }

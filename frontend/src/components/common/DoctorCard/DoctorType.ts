@@ -5,6 +5,7 @@ export interface Doctor {
   name: string;
   image: string;
   location: string;
+  qunoScore: number;
   rating: number;
   numberOfReviews: number;
   numberOfTreatmentsInLastYear: number;
