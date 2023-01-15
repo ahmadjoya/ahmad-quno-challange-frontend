@@ -26,7 +26,7 @@ const TopBanner: FC = () => {
               <div className={styles.icon}>
                 <Icon link="/images/check.svg" />
               </div>
-              <p>Only professionally-vetted doctors</p>
+              <p style={{ margin: 0 }}>{item.title}</p>
             </div>
           ))}
         </div>

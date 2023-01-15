@@ -2,16 +2,21 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from './styles.module.css';
 import type { FC } from 'react';
-import type { Doctor } from './DoctorType';
+import type { Doctor } from '../../../types/Doctor';
 const DoctorCard: FC<{ data: Doctor }> = ({ data }) => {
   return (
     <div className={styles.doctorCard}>
       <div className={styles.topOfCard}>
         <div className={styles.photoPlace}>
-          <Image src={data.image} height={100} width={100} alt={data.name} />
+          <Image
+            src={data.avatarUrl}
+            height={100}
+            width={100}
+            alt={data.name}
+          />
         </div>
         <div className={styles.desc}>
-          <p className={styles.category}>{data.category}</p>
+          <p className={styles.category}>Hair Transplant</p>
           <h1 className={styles.doctorTitle}>{data.name}</h1>
           <div className={styles.location}>
             <Image
@@ -20,16 +25,20 @@ const DoctorCard: FC<{ data: Doctor }> = ({ data }) => {
               height={24}
               alt="Location Icon"
             />
-            <p style={{ margin: 0 }}>{data.location}</p>
+            <p style={{ margin: 0 }}>
+              {data.city}, {data.country}
+            </p>
           </div>
         </div>
       </div>
       <div className={styles.middleOfCard}>
         <div className={styles.qunoScorePlace}>
           <div className={styles.qunoScoreContainer}>
-            <span className={styles.qunoScoreNumber}>{data.qunoScore}</span>
+            <span className={styles.qunoScoreNumber}>
+              {data.qunoScoreNumber}
+            </span>
           </div>
-          <span style={{ fontWeight: 'bold' }}>Excellent</span>
+          <span style={{ fontWeight: 'bold' }}>{data.qunoScoreText}</span>
           <span style={{ textTransform: 'uppercase' }}>Qunoscore</span>
         </div>
         <div className={styles.desc}>
@@ -41,10 +50,8 @@ const DoctorCard: FC<{ data: Doctor }> = ({ data }) => {
               alt="Location Icon"
             />
             <p style={{ margin: 0 }}>
-              <span style={{ fontWeight: 'bold' }}>{data.rating}</span>
-              <span style={{ textTransform: 'uppercase' }}>
-                ({data.numberOfReviews} Reviews)
-              </span>
+              <span style={{ fontWeight: 'bold' }}>{data.ratingsAverage}</span>
+              <span style={{ textTransform: 'uppercase' }}> (190 Reviews)</span>
             </p>
           </div>
           <div className={styles.ratingItem}>
@@ -55,9 +62,7 @@ const DoctorCard: FC<{ data: Doctor }> = ({ data }) => {
               alt="Location Icon"
             />
             <div className={styles.ratingItemDesc}>
-              <span>
-                {data.numberOfTreatmentsInLastYear} treatments last year
-              </span>
+              <span>{data.treatmentsLastYear} treatments last year</span>
             </div>
           </div>
           <div className={styles.ratingItem}>
@@ -68,7 +73,7 @@ const DoctorCard: FC<{ data: Doctor }> = ({ data }) => {
               alt="Location Icon"
             />
             <div className={styles.ratingItemDesc}>
-              <span>{data.yearsOfExperience} years of experience</span>
+              <span>{data.yearsExperience} years of experience</span>
             </div>
           </div>
         </div>
@@ -76,7 +81,7 @@ const DoctorCard: FC<{ data: Doctor }> = ({ data }) => {
       <div className={styles.bottomOfCard}>
         <div className={styles.pricing}>
           <p>starting from</p>
-          <p style={{ fontWeight: 'bold' }}>&euro;{data.startFrom}</p>
+          <p style={{ fontWeight: 'bold' }}>&euro;{data.basePrice}</p>
         </div>
         <div className={styles.seeProfile}>
           <button className={styles.seeProfileButton}>
