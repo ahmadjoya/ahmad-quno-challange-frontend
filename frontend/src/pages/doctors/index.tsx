@@ -5,7 +5,6 @@ import DoctorList from 'src/components/doctors';
 import { useState } from 'react';
 import axios from 'axios';
 import type { GetServerSideProps } from 'next';
-import styles from '../styles/doctors.module.css';
 import type { NextPage } from 'next';
 import type { Doctor } from 'src/types/Doctor';
 const Doctors: NextPage<{ data: Doctor[] }> = ({
@@ -46,10 +45,12 @@ const Doctors: NextPage<{ data: Doctor[] }> = ({
 
   return (
     <>
-      <Header />
-      <TopBanner />
-      <Sort sortBy={sortBy} selectedTab={selectedTab} />
-      <DoctorList doctors={doctors} />
+      <div className="container">
+        <Header />
+        <TopBanner />
+        <Sort sortBy={sortBy} selectedTab={selectedTab} />
+        <DoctorList doctors={doctors} />
+      </div>
     </>
   );
 };

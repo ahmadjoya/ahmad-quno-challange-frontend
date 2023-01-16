@@ -9,10 +9,15 @@
   display: flex;
   margin-bottom: 1rem;
 }
+.photoPlace {
+  flex: 1;
+}
 .desc {
+  flex: 2;
   padding-left: 0.9rem;
 }
 .category {
+  font-family: 'Adelle Sans';
   text-transform: uppercase;
   margin: 0;
 }
@@ -27,9 +32,11 @@
 .ratingItem {
   display: flex;
   align-items: center;
+  margin-bottom: 4px;
 }
 .qunoScorePlace {
   display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: center;
 }
@@ -70,6 +77,7 @@
   border-radius: 2px;
   padding: 0.6rem;
   width: 100%;
+  background-color: #fff;
 }
 .seeProfileButton a {
   color: #155263;

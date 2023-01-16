@@ -2,9 +2,13 @@
   font-family: 'NettoOT';
   src: local('NettoOT'), url(/fonts/NettoOT/NettoOT.woff) format('woff');
 }
-
+@font-face {
+  font-family: 'Adelle Sans';
+  src: local('Adelle Sans'),
+    url(/fonts/AdelleSans/AdelleSans.woff) format('woff');
+}
 html {
-  font-family: 'Adelle Sans, sans-serif';
+  font-family: 'Adelle Sans';
   line-height: 1.5;
 }
 .box {
@@ -18,4 +22,9 @@ h1.mainpageTitle {
 }
 .m-0 {
   margin: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30rem;
 }

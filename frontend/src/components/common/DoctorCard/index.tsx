@@ -3,6 +3,7 @@ import Link from 'next/link';
 import styles from './styles.module.css';
 import type { FC } from 'react';
 import type { Doctor } from '../../../types/Doctor';
+
 const DoctorCard: FC<{ data: Doctor }> = ({ data }) => {
   return (
     <div className={styles.doctorCard}>
@@ -13,6 +14,10 @@ const DoctorCard: FC<{ data: Doctor }> = ({ data }) => {
             height={100}
             width={100}
             alt={data.name}
+            style={{
+              width: '100%',
+              height: 'auto',
+            }}
           />
         </div>
         <div className={styles.desc}>
@@ -45,8 +50,8 @@ const DoctorCard: FC<{ data: Doctor }> = ({ data }) => {
           <div className={styles.ratingItem}>
             <Image
               src="/images/star.svg"
-              width={24}
-              height={24}
+              width={20}
+              height={20}
               alt="Location Icon"
             />
             <p style={{ margin: 0 }}>
@@ -57,8 +62,8 @@ const DoctorCard: FC<{ data: Doctor }> = ({ data }) => {
           <div className={styles.ratingItem}>
             <Image
               src="/images/check.svg"
-              width={24}
-              height={24}
+              width={20}
+              height={20}
               alt="Location Icon"
             />
             <div className={styles.ratingItemDesc}>
@@ -68,8 +73,8 @@ const DoctorCard: FC<{ data: Doctor }> = ({ data }) => {
           <div className={styles.ratingItem}>
             <Image
               src="/images/check.svg"
-              width={24}
-              height={24}
+              width={20}
+              height={20}
               alt="Location Icon"
             />
             <div className={styles.ratingItemDesc}>
