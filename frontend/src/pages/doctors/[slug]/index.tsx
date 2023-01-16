@@ -34,7 +34,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
     const { data } = await axios.get(
       `${process.env.NEXT_PUBLIC_BACKEND_URL}/${slug}`,
     );
-    console.log('data', data);
+
     return {
       props: { data },
     };
