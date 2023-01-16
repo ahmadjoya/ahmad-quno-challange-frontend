@@ -30,14 +30,22 @@ const DoctorProfile: NextPage<{ data: Doctor }> = ({
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const slug = ctx.params?.slug;
-
-  const { data }: { data: Doctor } = await axios.get(
-    `${process.env.NEXT_PUBLIC_BACKEND_URL}/${slug}`,
-  );
-
-  return {
-    props: { data },
-  };
+  try {
+    const { data } = await axios.get(
+      `${process.env.NEXT_PUBLIC_BACKEND_URL}/${slug}`,
+    );
+    console.log('data', data);
+    return {
+      props: { data },
+    };
+  } catch {
+    return {
+      redirect: {
+        destination: '/404',
+        permanent: true,
+      },
+    };
+  }
 };
 
 export default DoctorProfile;
