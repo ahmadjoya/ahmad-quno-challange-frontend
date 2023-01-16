@@ -14,7 +14,6 @@ const Doctors: NextPage<{ data: Doctor[] }> = ({
 }) => {
   const [doctors, setDoctors] = useState<Doctor[]>([...data]);
   const [selectedTab, setSelectedTab] = useState<string>('');
-  console.log('data', data);
 
   const sortBy = (field: string): Doctor[] => {
     if (field === 'Best reviews') {
@@ -55,13 +54,11 @@ const Doctors: NextPage<{ data: Doctor[] }> = ({
   );
 };
 
-export const getServerSideProps: GetServerSideProps = async (ctx) => {
-  const slug = ctx.params?.slug;
-  console.log('slug', slug);
+export const getServerSideProps: GetServerSideProps = async () => {
   const { data }: { data: Doctor[] } = await axios.get(
     `${process.env.NEXT_PUBLIC_BACKEND_URL}`,
   );
-  console.log('data', data);
+
   return {
     props: { data },
   };
