@@ -15,9 +15,9 @@ const TextBanner: FC<{ data: Doctor }> = ({ data }: { data: Doctor }) => {
             <div className={styles.icon}>
               <Icon link="/images/location.svg" />
             </div>
-            <p>
+            <span>
               {data.city}, {data.country}
-            </p>
+            </span>
           </div>
         </div>
         <div className={styles.qunoScore}>
@@ -34,13 +34,21 @@ const TextBanner: FC<{ data: Doctor }> = ({ data }: { data: Doctor }) => {
             <div className={styles.icon}>
               <Icon link={'/images/star.svg'} />
             </div>
-            <p className="m-0">{data.ratingsAverage} (190 Reviews)</p>
+            <p className="m-0">
+              <span style={{ fontWeight: 'bold' }}>{data.ratingsAverage}</span>{' '}
+              (190 Reviews)
+            </p>
           </div>
           <div className={styles.descItems}>
             <div className={styles.icon}>
               <Icon link={'/images/heart.svg'} />
             </div>
-            <p className="m-0">{data.qunoScoreNumber * 10}% would recommend</p>
+            <p className="m-0">
+              <span style={{ fontWeight: 'bold' }}>
+                {data.qunoScoreNumber * 10}%
+              </span>{' '}
+              would recommend
+            </p>
           </div>
           <div className={styles.descItems}>
             <div className={styles.icon}>

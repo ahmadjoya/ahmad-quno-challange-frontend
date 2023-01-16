@@ -15,14 +15,16 @@ const DoctorProfile: NextPage<{ data: Doctor }> = ({
   console.log('data', data);
   return (
     <>
-      <Header />
-      <ImageBanner
-        data={{
-          image: data.avatarUrl,
-          name: data.name,
-        }}
-      />
-      <TextBanner data={data} />
+      <div className="container">
+        <Header />
+        <ImageBanner
+          data={{
+            image: data.avatarUrl,
+            name: data.name,
+          }}
+        />
+        <TextBanner data={data} />
+      </div>
     </>
   );
 };
