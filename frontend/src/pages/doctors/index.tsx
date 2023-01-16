@@ -55,13 +55,21 @@ const Doctors: NextPage<{ data: Doctor[] }> = ({
 };
 
 export const getServerSideProps: GetServerSideProps = async () => {
-  const { data }: { data: Doctor[] } = await axios.get(
-    `${process.env.NEXT_PUBLIC_BACKEND_URL}`,
-  );
-
-  return {
-    props: { data },
-  };
+  try {
+    const { data }: { data: Doctor[] } = await axios.get(
+      `${process.env.NEXT_PUBLIC_BACKEND_URL}`,
+    );
+    return {
+      props: { data },
+    };
+  } catch {
+    return {
+      redirect: {
+        destination: '/404',
+        permanent: true,
+      },
+    };
+  }
 };
 
 export default Doctors;
